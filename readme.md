@@ -37,9 +37,11 @@ The project tree can be seen below. This will likely change throughout the life 
 |   |   |--modules                  # directory for puppet modules
 |   |   |   |--module_1
 |   |   |   |--module_2
+|   |   |
 |   |   |--manifests
 |   |   |   |--packages/            # directory holding package configurations
 |   |   |   |   |--base_packages.pp
+|   |   |   |
 |   |   |   |--init.pp              # entry point
 |   |   |   |--package_init.pp      # manages package installations
 |   |   |   |--users.pp             # manages the users and groups
@@ -47,15 +49,19 @@ The project tree can be seen below. This will likely change throughout the life 
 |   |   |   |--repos.pp             # manages the repositories used
 |   |   |   |--services.pp          # manages services expected
 |   |   |--environment.conf         # provides the paths needed by puppet
+|   |
 |   |--web                          # same as test, but a web
+|
 |--boxes                            # this directory stores packaged boxes
 |   |--box_1
 |   |--box_2
+|
 |--shared                           # this folder (and its contents) will be shared with the running box
 |   |--package_1_dir
 |   |--package_2_dir
 |   |--file_1
 |   |--file_2
+|
 |--Vagrantfile                      # configuration file needed for Vagrant to run
 |--labrat_install.sh                # script to download boxes
 ```
