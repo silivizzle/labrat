@@ -3,7 +3,9 @@
 ## Why
 
 Being cautious by nature, I want a way to test the behavior of my scripts, service, puppet code, etc... in a safe way. Being impatient, I don't want to take the time needed to properly build a VM only to test whether the script works as intended. By the time I build a prod clone, I should be fairly certain that my code is functionally sounds.
+
 As a result, I decided to leverage Vagrant's strengths to quickly provision and stand up test environments for various Linux distributions. The idea is that to pick a box to stand up in the Vagrantfile, make sure the puppet code in the environment manifest provisions the vm with the settings needed, run `vagrant up` in the labrat root directory, and develop the script in the shared folder. End of story.
+
 This project isn't meant to be anything more than a quick way to bring up a Linux machine for me to try things out from a systems engineering angle. There are better, cleaner ways to use Vagrant for application development and I will try to list some at some point in the future. Labrat's use case, at least at the start of it, is a way for me to become more comfortable with DevOps and SysEng scenarios.
 
 ---
