@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$box = "ubuntu/xenial64"
+$box = "bento/centos-7.1"
 
 Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false
