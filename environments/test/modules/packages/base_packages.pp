@@ -12,6 +12,11 @@ class base_packages{
         default     => undef;
     }
 
-    
+    $basePackages   = ['python', 'httpd', 'gcc-c++', 'ruby-devel', 'gcc', 'make', 'rpm-build', $docker, $apache ]
+
+    package { $basePackages :
+        ensure      => 'installed',
+        require     => Labrat::Exec['yum update']
+    }
 }
 
